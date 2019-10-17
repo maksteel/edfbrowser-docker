@@ -29,6 +29,11 @@ docker run -ti --rm -e DISPLAY=$DISPLAY \
 ### macOS
 
 * Install and run [XQuartz](https://www.xquartz.org/)
+* Open `XQuartz -> Preferences` menu
+* Go to `Security` tab, and check both 
+    * ✅ `Authenticate connections`  
+    * ✅ `Allow connections from network clients`
+* Restart `XQuartz`
 
 ```
 docker run -ti --rm -e DISPLAY=host.docker.internal:0 \
